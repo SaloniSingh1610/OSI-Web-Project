@@ -9,7 +9,7 @@ body::after {
     left: 0px;
     width: 100%;
     height: 100%;
-    background-image: url("https://media.giphy.com/media/OkVVUlG40FnuE/giphy.gif");
+    
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -74,6 +74,14 @@ section {
     justify-content: center;
     border: hidden;
 }
+#myVideo {
+    position: fixed;
+    z-index: -1;
+    /* right: 0;
+    bottom: 0;
+    min-width:100%; 
+    min-height: 100%; */
+  }
 
 .second-container {
     border:2px solid red;
@@ -281,6 +289,7 @@ section {
 
 .box>span {
     font-size: 3.8vh;
+    background-color: white;
     display: block;
     text-align: center;
     height: 8vh;
@@ -333,8 +342,9 @@ section {
     padding: 1rem;
 }
 
-footer h2 {
+.footer h2 {
     text-align: center;
+    color:white;
     font-size: 2.4vw;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -367,7 +377,7 @@ footer h2 {
     }
 
     #logo1 img {
-        margin-top: 10px;
+        /* margin-top: 150px; */
         height: 8rem;
         width: 9rem;
     }
@@ -434,7 +444,7 @@ footer h2 {
     }
 
     #logo1 img {
-        margin-top: 10px;
+        /* margin-top: 110px; */
         height: 10rem;
         width: 11rem;
     }
@@ -493,7 +503,7 @@ footer h2 {
     }
 
     #logo1 img {
-        margin-top: 10px;
+        /* margin-top: 110px; */
         height: 11.5rem;
         width: 13rem;
     }
@@ -506,3 +516,19 @@ footer h2 {
 
     }
 }
+@media (min-aspect-ratio:16/9){
+    #myVideo {
+      width:100%;
+      height:auto;
+  
+    }
+  
+  }
+  @media (max-aspect-ratio:16/9){
+    #myVideo {
+      width:auto;
+      height:100%;
+  
+    }
+    
+  }
