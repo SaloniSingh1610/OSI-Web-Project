@@ -1,0 +1,595 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+
+}
+html ,body{
+  margin: 0;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+	background-color: #F5F5F5;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+	border-radius: 10px;
+	background-color: #444444;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: rgb(4, 58, 58);
+	background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%,transparent,transparent)
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(1, 37, 37); 
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width:100%; 
+    min-height: 100%;
+    z-index: -1;
+    opacity: 0.95;
+}
+        .content{
+          color: #fff;
+          font-family: 'Libre Baskerville', serif;
+          font-size: 50px;
+          font-weight: bold;
+          position: relative;
+          width: fit-content;
+          margin: 10px auto 30px ;
+        }
+  .typewriter{
+    color: #fff;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    font-weight: bold;
+    overflow: hidden; 
+    position: relative;
+    border-right: .15em solid orange; 
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation:
+        typing 4.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+      width: fit-content;
+    margin: auto;
+  }
+  
+ 
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 61% }
+  }
+  
+ 
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(212, 147, 26) }
+  }
+
+
+
+  ul {
+  width: 400px;
+  height:400px;
+  margin: auto;
+    position:relative;
+  }
+  
+  li { 
+   
+    --h: calc(100% / 3);
+    --w: calc(1.15470053838 * var(--h));
+    --a: calc(0.28867513459 * var(--h));
+    --d: calc(0.57735026919 * var(--h));
+    height:var(--h);
+    width:var(--w);
+    position: absolute;
+   list-style: none;
+  }
+  
+  img {
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+   
+    --aw:24.99999999999%;
+    clip-path:polygon(
+      var(--aw) 0,
+      0 50%,
+      var(--aw) 100%,
+      calc(100% - var(--aw)) 100%,
+      100% 50%,
+      calc(100% - var(--aw)) 0
+    );
+  }
+  
+  li:nth-of-type(1) {
+    left:calc(50% - var(--a) - var(--d) * 0.5);
+    top:0;
+  }
+  li:nth-of-type(2) {
+    left:calc(50% - var(--a) * 2 - var(--d) * 1.5);
+    top:calc(var(--h) * 0.5);
+  }
+  li:nth-of-type(3) {
+    left:calc(50% - var(--a) * 2 - var(--d) * 1.5);
+    top:calc(var(--h) * 1.5);
+  }
+  li:nth-of-type(4) {
+    left:calc(50% - var(--a) - var(--d) * 0.5);
+    top:calc(var(--h) * 2);
+  }
+  li:nth-of-type(5) {
+    left:calc(50% + var(--d) * 0.5);
+    top:calc(var(--h) * 0.5);
+  }
+  li:nth-of-type(6) {
+    left:calc(50% + var(--d) * 0.5);
+    top:calc(var(--h) * 1.5);
+  }
+  
+  ul {
+    filter:drop-shadow(0 0 10px hsla(0,0%,0%,0.3));
+  }
+  
+  li:hover {
+    filter:drop-shadow(0 0 10px powderblue);
+    z-index:10;
+  }
+  ul {
+    animation:r 4s forwards;
+  } @keyframes r {
+    from {transform:rotate(180deg)}
+    to {transform:rotate(0)}
+  }
+  
+  li {
+    animation:ir 4s forwards;
+  } @keyframes ir {
+    from {transform:rotate(-360deg)}
+    to {transform:rotate(0)}
+  }
+
+  .container_heading{
+    position: relative;
+    font-size: 40px;
+    color: #b5b5ff;
+    /* text-decoration: underline; */
+    width: fit-content;
+    font-weight: bold;
+    margin: 30px auto;
+    cursor: pointer;
+  }
+
+
+  .container,
+  .container * {
+    box-sizing: border-box;
+  }
+  .box{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+  }
+  .container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: #fff;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    border: 2px solid rgb(36, 8, 77);
+    background-color: rgb(36, 8, 77);
+    font-weight: bold;
+    position: relative;
+    width: 30;
+    left: auto;
+    margin-left: auto;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    /* max-width: 100%;
+    height: auto; */
+    /* margin: 20px;
+    left:80px; */
+  }
+
+
+  .container .container_bottom {
+    /* display: block; */
+    width: 315px;
+    height: 200px;
+    margin: 10px;
+  }
+  .container .container_top {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 15px;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .container:hover .container_top,
+  .container:active .container_top {
+    opacity: 1;
+  }
+  .container .box1{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Libre Baskerville', serif;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .none{
+    clip-path: none;
+    background-color: white;
+    display: inline;
+    
+  }
+  .none1{
+    clip-path: circle(50%);
+    background-color: white;
+    display: inline;
+  }
+  .box .work1,.work2,.work3{
+    position: relative;
+    width:120px;
+    height:120px;
+    float: left;
+    font-size:15px;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    text-align: center;
+    margin: 10px;
+
+}
+.laser_head{
+  background-color:  rgb(61, 88, 105);
+  width: fit-content;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  flex:2 0px;
+}
+.laser_head .laser{
+  position:relative;
+  font-size:30px;
+  border:0px solid rgb(168, 217, 247);
+  
+  /* background-color: rgb(61, 88, 105); */
+
+
+}
+
+#Video {
+  width: 24vw;
+  /* height: 35vh; */
+ 
+  float:right;
+}
+.appointment a{
+  position: relative;
+  display: inline-block!important;
+  padding: 15px 30px;
+  color:white;
+  font-family: 'Libre Baskerville', serif;
+  background-color:rgb(61, 88, 105) ;
+  border-radius: 80px;
+  text-decoration: none;
+  font-size: 20px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.2s;
+ float: right;
+ right: 10px;
+ bottom: -50px;
+
+}
+.appointment a:hover{
+  color:white;
+  background:rgb(30, 63, 83);
+  box-shadow: 0 0 10px rgb(68, 118, 150),0 0 40px rgb(68, 118, 150),0 0 80px rgb(68, 118, 150);
+  transition-delay:1s;
+
+}
+.appointment a span{
+  position: absolute;
+  display: block;
+}
+.appointment a span:nth-child(1){
+  top:0;
+  left:-100%;
+  width:100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,rgb(11, 41, 41));
+
+  
+}
+.appointment a:hover span:nth-child(1){
+  left: 100%;
+  transition: 1s;
+}
+.appointment a span:nth-child(3){
+  bottom:0;
+  right:-100%;
+  width:100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,rgb(11, 41, 41));
+
+  
+}
+.appointment a:hover span:nth-child(3){
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+.appointment a span:nth-child(2){
+  top:-100%;
+  right:0;
+  width:2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,rgb(11, 41, 41));
+
+  
+}
+.appointment a:hover span:nth-child(2){
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.appointment a span:nth-child(4){
+  bottom:-100%;
+  left:0;
+  width:2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,rgb(11, 41, 41));
+
+  
+}
+.appointment a:hover span:nth-child(4){
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+@media screen and (max-width:1670px){
+  .laser_head .laser{
+    font-size: 25px;
+  }
+@media screen and (max-width:1390px){
+  .laser_head .laser{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:1110px)
+{
+  #myVideo{
+    min-width:100%;
+    min-height: 100%;
+  }
+  .content{
+    font-size: 30px;
+  }
+  .typewriter{
+    font-size: 15px;
+  }
+  ul{
+    width:200px;
+    height:200px ;
+  }
+  .laser_head{
+    max-width: 100%;
+    
+  }
+  .laser_head .laser{
+    font-size: 15px;
+  }
+  #Video {
+    /* width:fit-content; */
+  }
+  .container_heading{
+    font-size: 20px;
+  }
+  .box{
+    position: relative;
+    max-width: 100%;
+    /* margin: auto; */
+  }
+  .container{
+    position: relative;
+
+    margin: 10px;
+
+  }
+  .box .container .box1{
+    font-size: 18px;
+  }
+  .box .container img{
+    width:120px;
+    height: 100px;
+  }
+
+  .work1,.work2,.work3{
+    position: relative;
+
+    margin: 10px;
+
+  }
+  .appointment a{
+    
+    padding: 8px 15px;
+   
+    border-radius: 60px;
+   
+    font-size: 14px;
+ 
+   right: 8px;
+   bottom: -70px;
+  
+  }
+}
+@media screen and (max-width:880px)
+{
+  #myVideo{
+    min-width:100%;
+    min-height: 100%;
+  }
+  .content{
+    font-size: 30px;
+  }
+  .typewriter{
+    font-size: 15px;
+  }
+  ul{
+    width:200px;
+    height:200px ;
+  }
+  .laser_head{
+    max-width: 100%;
+    
+  }
+  .laser_head .laser{
+    font-size: 10px;
+  }
+  #Video {
+    /* width:fit-content; */
+  }
+  .container_heading{
+    font-size: 20px;
+  }
+  .box{
+    position: relative;
+    max-width: 100%;
+    /* margin: auto; */
+  }
+  .container{
+    position: relative;
+
+    margin: 10px;
+
+  }
+  .box .container .box1{
+    font-size: 18px;
+  }
+  .box .container img{
+    width:120px;
+    height: 100px;
+  }
+
+  .work1,.work2,.work3{
+    position: relative;
+
+    margin: 10px;
+
+  }
+  .appointment a{
+    
+    padding: 5px 10px;
+   
+    border-radius: 50px;
+   
+    font-size: 12px;
+ 
+   right: 10px;
+   bottom: -70px;
+  
+  }
+}
+ @media screen and (max-width:500px)
+{
+  #myVideo{
+    min-width:100%;
+    min-height: 100%;
+  }
+  .content{
+    font-size: 25px;
+  }
+  .typewriter{
+    font-size: 12px;
+  }
+  ul{
+    width:150px;
+    height:150px ;
+  }
+  .laser_head{
+    max-width: 100%;
+    
+  }
+  .laser_head .laser{
+    font-size: 8px;
+  }
+  #Video {
+    /* width:fit-content; */
+  }
+  .container_heading{
+    font-size: 18px;
+  }
+  .box{
+    position: relative;
+    max-width: 100%;
+    /* margin: auto; */
+  }
+  .container{
+    position: relative;
+
+    margin: 5px;
+
+  }
+  .box .container .box1{
+    font-size: 14px;
+  }
+  .box .container img{
+    width:80px;
+    height: 60px;
+  }
+
+  .work1,.work2,.work3{
+    position: relative;
+    width:80px;
+    height: 80px;
+    margin: 5px;
+
+  }
+  .appointment a{
+    
+    padding: 4px 20px;
+   
+    border-radius: 30px;
+   
+    font-size: 10px;
+ 
+   right: 10px;
+   bottom: -50px;
+  
+  }
+} 
