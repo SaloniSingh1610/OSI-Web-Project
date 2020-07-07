@@ -2,14 +2,17 @@ body
 {
     font-family: Tahoma, Geneva, sans-serif;
     color: #fff;
-    background: url(tenor.gif);
-    background-size: cover;
+  
 }
+::-webkit-scrollbar {
+    display:none;
+  }
+  
 .signin
 {
     background: rgba(44,62,80,0.7);
     padding: 40px;
-    width: 250px;
+    width: 330px;
     margin: auto;
     margin-top: 90px;
     height: 400px;
@@ -77,3 +80,27 @@ a:hover
     color:aliceblue;
     opacity: 0.8; /* Firefox */
 }
+#myVideo {
+    position: fixed;
+    z-index: -1;
+    /* right: 0;
+    bottom: 0;
+    min-width:100%; 
+    min-height: 100%; */
+  }
+@media (min-aspect-ratio:16/9){
+    #myVideo {
+      width:100%;
+      height:auto;
+  
+    }
+  
+  }
+  @media (max-aspect-ratio:16/9){
+    #myVideo {
+      width:auto;
+      height:100%;
+  
+    }
+    
+  }
