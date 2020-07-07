@@ -7,23 +7,56 @@
 
 .topnav{
 	background-color: rgb(16, 16, 26);
-	width:100%;
-	position: relative;
+	min-width:100%;
+	position: absolute;
 	z-index: 10;
 	top: 0;
 	margin-bottom: 30px;
+}
+.navbar-nav{
+	margin-left: 28rem;
 }
 .navbar a img{
 	height:80px;
 }
 .nav-link{
 	margin-left: 10px;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
 }
 
 .dropdown-menu a:hover{
 	background: rgba(252, 132, 132, 0.884);
+}
+@media (max-width:1150px){
+	.navbar-nav{
+		margin-left: 20rem!important;
+	}
+	.nav-link{
+		margin-left: 8px;
+		font-size: 15px;
+		font-weight: bold;
+	}
+}
+@media (max-width:1000px){
+	.navbar-nav{
+		margin-left: 15rem!important;
+	}
+	.nav-link{
+		margin-left: 8px;
+		font-size: 10px;
+		font-weight: bold;
+	}
+}
+@media (max-width:700px){
+	.navbar-nav{
+		margin-left: 10rem!important;
+	}
+	.nav-link{
+		margin-left: 8px;
+		font-size:10px;
+		font-weight: bold;
+	}
 }
 
 /* The footer is fixed to the bottom of the page */
