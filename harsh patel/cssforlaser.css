@@ -10,37 +10,18 @@ html ,body{
 }
 /* width */
 ::-webkit-scrollbar {
-  width: 12px;
-	background-color: #F5F5F5;
+  display:none;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
-	border-radius: 10px;
-	background-color: #444444;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-	background-color: rgb(4, 58, 58);
-	background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%,transparent,transparent)
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(1, 37, 37); 
-}
 
 #myVideo {
     position: fixed;
     right: 0;
     bottom: 0;
-    min-width:100%; 
+    min-width: 100%;
     min-height: 100%;
     z-index: -1;
-    opacity: 0.95;
+    
 }
         .content{
           color: #fff;
@@ -182,11 +163,13 @@ html ,body{
     box-sizing: border-box;
   }
   .box{
+  
     position: relative;
     width: fit-content;
     margin: auto;
   }
   .container {
+
     position: relative;
     display: inline-block;
     overflow: hidden;
@@ -197,10 +180,10 @@ html ,body{
     background-color: rgb(36, 8, 77);
     font-weight: bold;
     position: relative;
-    width: 30;
+    width: 31%!important;
     left: auto;
-    margin-left: auto;
-    margin: 10px;
+    
+    margin: 10px!important;
     cursor: pointer;
     border-radius: 8px;
     /* max-width: 100%;
@@ -211,6 +194,7 @@ html ,body{
 
 
   .container .container_bottom {
+    
     /* display: block; */
     width: 315px;
     height: 200px;
@@ -284,6 +268,7 @@ html ,body{
 .laser_head .laser{
   position:relative;
   font-size:30px;
+  color: black;
   border:0px solid rgb(168, 217, 247);
   
   /* background-color: rgb(61, 88, 105); */
