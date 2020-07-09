@@ -1,0 +1,531 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+#wrapper
+{
+	text-align: center;
+	width: 500px;
+	margin: auto;
+}
+/* width */
+::-webkit-scrollbar {
+  display:none;
+}
+
+
+.wrapper {
+    width: 200px;
+    height: 200px;
+    margin: 10% auto 5%;
+  }
+
+  .box-area {
+    animation: animate 8s ease-in-out infinite;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+
+  }
+
+  .box-area div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+  }
+
+  .box-area .box1 {
+    background-image: url("https://images.shiksha.com/mediadata/images/1571909953phpVubCwi.jpeg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: translateZ(100px);
+  }
+
+  .box-area .box2 {
+    background-image: url("https://thehill.com/sites/default/files/styles/article_full/public/coronavirus_3dprinting_040820istock.jpg?itok=bPZCpADd");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateY(90deg) translateZ(100px);
+  }
+
+  .box-area .box3 {
+    background-image: url("https://itsupplychain.com/wp-content/uploads/2019/11/3D-Printing-900-x-636.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+  }
+
+  .box-area .box4 {
+    background-image: url("https://uvebtech.com/wp-content/uploads/3D-printing.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+  }
+
+  .box-area .box5 {
+    background-image: url("https://specials-images.forbesimg.com/imageserve/1140075616/960x0.jpg?fit=scale");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+  }
+
+  .box-area .box6 {
+    background-image: url("https://www.pngitem.com/pimgs/m/134-1342342_circle-contact-us-icon-hd-png-download.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateX(-90deg) translateZ(100px);
+  }
+
+  @keyframes animate {
+
+    from,
+    to {
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+
+    16% {
+      transform: rotateY(-90deg);
+    }
+
+    33% {
+      transform: rotateY(-90deg) rotateZ(90deg);
+    }
+
+    50% {
+      transform: rotateY(-180deg) rotateZ(90deg);
+    }
+
+    66% {
+      transform: rotateY(-270deg) rotateX(90deg);
+    }
+
+    83% {
+      transform: rotateX(90deg);
+    }
+  }
+
+  .center{
+    position: relative;
+
+      width: fit-content;
+      font-size: 40px;
+      font-family: 'Libre Baskerville', serif;
+      margin: 0px auto;
+  }
+
+  #myVideo {
+    position: fixed;
+    z-index: -1;
+    /* right: 0;
+    bottom: 0;
+    min-width:100%; 
+    min-height: 100%; */
+  }
+  .content {
+    
+  
+    /* background: rgba(0, 0, 0, 0.5); */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    
+  }
+
+ 
+  .typewriter h3 {
+    color: #fff;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    font-weight: bold;
+    overflow: hidden; 
+    position: relative;
+    border-right: .15em solid orange; 
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation:
+        typing 4.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+      width: fit-content;
+    margin: auto;
+  }
+  
+ 
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 56% }
+  }
+  
+ 
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(212, 147, 26) }
+  }
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color:#8B0000 ; */
+
+}
+section::before{
+    content:" ";
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:50%;
+    height: 100%;
+    /* background-color: #A52A2A; */
+    
+}
+section .container{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+    
+}
+section .container .contactinfo{
+    position: absolute;
+    top:40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background-color: rgb(37, 21, 80);
+    z-index:1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0, 0, 0,0.2);
+
+}
+section .container .contactinfo h2{
+    color: rgb(252, 250, 250);
+    font-size: 24px;
+    font-weight: 500;
+
+}
+section .container .contactinfo .info{
+    position: relative;
+    margin:20px 0;
+}
+section .container .contactinfo .info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+
+}
+section .container .contactinfo .info li span:nth-child(1)
+{
+    width:30px;
+    min-width:30px;
+}
+section .container .contactinfo .info li span:nth-child(1) img
+{   max-width: 100%;
+    /* filter:invert(1); */
+    opacity:0.5;
+}
+section .container .contactinfo .info li span:nth-child(2)
+{   color: rgb(254, 254, 255);
+    margin-left: 10px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 300;
+    opacity: 0.5;
+
+}
+section .container .contactinfo .info li:hover span:nth-child(1) img,
+section .container .contactinfo .info li:hover span:nth-child(2)
+{
+    opacity: 1;
+
+}
+section .container .contactinfo .sci {
+    position: relative;
+    display: flex;
+
+}
+section .container .contactinfo .sci li{
+    list-style: none;
+    margin-right: 3%;
+    
+}
+section .container .contactinfo .sci li a{
+   text-decoration: none;
+
+}
+section .container .contactinfo .sci li a img{
+   filter:invert(1);
+   opacity: 0.5;
+
+}
+section .container .contactinfo .sci li:hover a img{
+  opacity:1;
+}
+section .container .contactform {
+    position: absolute;
+    padding: 70px 50px;
+    background: rgb(165, 164, 164);
+    margin-left: 150px;
+    padding-left: 250px;
+    width:900px ;
+    height:100%;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5) ;
+}
+section .container .contactform h2{
+    color: rgb(12, 12, 82);
+    font-size: 24px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 500;
+}
+section .container .contactform .formbox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    
+}
+section .container .contactform .formbox .inputbox{
+position: relative;
+margin: 0 0 35px 0;
+}
+.w50{
+width:47%;
+}
+.w100{
+width:100%;
+}
+section .container .contactform .formbox .inputbox input,
+section .container .contactform .formbox .inputbox textarea{
+width:100% !important;
+padding:5px 0;
+resize: none;
+font-family: 'Libre Baskerville', serif;
+font-size: 18px;
+font-weight: 300;
+color:rgb(99, 98, 98);
+border: none;
+border-bottom: 1px solid black;
+outline: none;
+
+}
+section .container .contactform .formbox .inputbox textarea{
+    min-height: 120px;
+}
+section .container .contactform .formbox .inputbox span{
+    position: absolute;
+    left: 0;
+    padding:5px 0;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    font-weight: 300;
+    color:#333;
+    transition: 0.3s;
+}
+section .container .contactform .formbox .inputbox input[type="submit"]{
+    position: relative;
+    cursor: pointer;
+    background-color: rgb(4, 4, 97);
+    color: white;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+section .container .contactform .formbox .inputbox input[type="submit"]:hover{
+    background-color: rgb(9, 2, 44);
+}
+.map{
+  position: relative;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  width: fit-content;
+  margin: 10px auto;
+  text-align: center;
+  /* text-decoration: underline; */
+  font-family: 'Libre Baskerville', serif;
+
+}
+.map .mymap{
+  position:relative;
+  width:600px ;
+  height:450px;
+  border: 0px;
+  margin:30px auto;
+
+}
+
+
+@media screen and (max-width:1100px){
+
+
+  .center{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .typewriter h3{
+    font-size: 25px;
+    margin-top: 70px;
+    text-align: center;
+  }
+ 
+  section .container .contactinfo{
+    position: absolute;
+    top:50px;
+    width: 280px;
+    margin-left: 5%;
+
+  }
+  section .container .contactform {
+    position: absolute;
+    padding: 50px 90px;
+    background: rgb(165, 164, 164);
+    margin-left: 250px;
+    padding-left: 180px;
+    width:700px ;
+    height:100%;
+  }
+
+  .map .mymap{
+    position:relative;
+    width:500px ;
+    height:350px;
+    border: 0px;
+    margin:20px auto;
+  
+  }
+}
+@media screen and (max-width:1000px){
+
+
+  .center{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .typewriter h3{
+    font-size: 20px;
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  section .container .contactinfo{
+    position: absolute;
+    top:55px;
+    width: 200px;
+    margin-left:3%;
+    
+    font-size: 12px;
+  }
+  section .container .contactinfo img{
+    width:35px;
+    height: 35px;
+  }
+  section .container .contactform {
+    position: absolute;
+    padding: 50px 90px;
+    background: rgb(165, 164, 164);
+    margin-left: 8%;
+    padding-left: 180px;
+    width: 65%;
+ 
+  }
+  .map .mymap{
+    position:relative;
+    width:400px ;
+    height:250px;
+    border: 0px;
+    margin:10px auto;
+  
+  }
+
+
+}
+@media screen and (max-width:700px){
+
+
+  .center{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .typewriter h3{
+    font-size: 15px;
+    margin-top: 80px;
+    text-align: center;
+    width: fit-content;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 70% }
+  }
+  
+ 
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(212, 147, 26) }
+  }
+
+  section .container .contactinfo{
+    position: absolute;
+    top:55px;
+    width: 150px;
+    padding:25px 10px;
+    font-size: 10px;
+    margin-left: 2%;
+  }
+  section .container .contactinfo img{
+    width:25px;
+    height: 25px;
+  }
+  section .container .contactform {
+    position: absolute;
+    padding: 50px 90px;
+    background: rgb(165, 164, 164);
+    margin-left: 100px;
+    padding-left: 100px;
+    width: 35%;
+    
+    font-size: 13px;
+  }
+
+  .map .mymap{
+    position:relative;
+    width:200px ;
+    height:200px;
+    border: 0px;
+    margin:5px auto;
+  
+  }
+}
+@media (min-aspect-ratio:16/9){
+  #myVideo {
+    width:100%;
+    height:auto;
+
+  }
+
+}
+@media (max-aspect-ratio:16/9){
+  #myVideo {
+    width:auto;
+    height:100%;
+
+  }
+  
+}
